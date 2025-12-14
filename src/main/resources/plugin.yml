@@ -1,0 +1,11 @@
+name: SimplePlugin
+version: 1.0.0
+main: com.example.simpleplugin.SimplePlugin
+api-version: '1.20'
+description: Plugin simples de Minecraft com comando de saudação.
+authors:
+  - Exemplo
+commands:
+  saudacao:
+    description: Envie uma mensagem de saudação personalizada.
+    usage: /<command>
