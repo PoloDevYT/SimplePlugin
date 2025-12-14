@@ -1,0 +1,25 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <mirrors>
+        <!-- Use a mirror when direct access to Maven Central is blocked (HTTP 403, corporate proxy, etc.). -->
+        <mirror>
+            <id>central-mirror</id>
+            <name>Central mirror</name>
+            <url>${env.MVN_MIRROR_URL}</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+    </mirrors>
+    <proxies>
+        <!-- Uncomment and fill if your environment requires an HTTP/HTTPS proxy. -->
+        <!--
+        <proxy>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>proxy.example.com</host>
+            <port>3128</port>
+            <nonProxyHosts>localhost|127.0.0.1</nonProxyHosts>
+        </proxy>
+        -->
+    </proxies>
+</settings>
