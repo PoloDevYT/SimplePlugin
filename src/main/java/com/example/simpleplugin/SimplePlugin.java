@@ -25,7 +25,8 @@ public class SimplePlugin extends JavaPlugin {
         String nome = sender.getName();
         String mensagem = String.format("Olá, %s! Obrigado por testar o SimplePlugin.", nome);
 
-        if (sender instanceof Player player) {
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
             player.sendMessage(mensagem);
         } else {
             sender.sendMessage(mensagem);
